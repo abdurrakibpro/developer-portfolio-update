@@ -1,3 +1,4 @@
+/* Universal Styles */
 *{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -17,11 +18,12 @@
     background: #FD6E0A;
 }
 
-.header{
+header{
     background: #FFF8F3;
     background-image: url('images/header_bg.png'), url('images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, left;
+    border: 1px solid white;
 }
 
 
@@ -38,11 +40,16 @@ nav{
 nav ul{
     display: flex;
     align-items: center;
-    
 }
-nav li{
+nav a{
+    text-decoration: none;
+}
+nav a li{
     list-style: none;
     margin-left: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #474747;
 }
 
 
@@ -50,6 +57,7 @@ nav li{
 .banner{
     margin: 0 200px;
     display: flex;
+    gap: 500px;
 }
 .banner-title{
     font-weight: 700;
@@ -60,7 +68,6 @@ nav li{
     font-size: 45px;
     margin-bottom: 20px;
 }
-
 .banner-discription{
     color: #757575;
     font-size: 18px;
@@ -102,7 +109,7 @@ section{
 }
 .about .info-title{
     font-size: 20px;
-    columns: #757575;
+    color: #757575;
 }
 .info-description{
     font-size: 20px;
@@ -112,7 +119,6 @@ section{
 
 
 /* what-i-do Styles */
-
 .skills-container{
     display: flex;
     gap: 24px;
@@ -133,4 +139,54 @@ section{
     color: #757575;
 }
 
+
 /* Resume Styles */
+.resume-content{
+    display: flex;
+    gap: 24px;
+}
+.resume-item{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.resume .title{
+    font-weight: 700;
+    font-size: 25px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+.resume .sub-title{
+    color: #757575;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.resume .description{
+    color: #757575;
+}
+.rsume-btn{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* Contact Styles */
+.contact{
+    display: flex;
+    gap: 100px;
+    padding: 130px 200px;
+    background-color: #FFF8F3;
+}
+.contact .section-title{
+    text-align: left;
+}
+.contact input[type="text"], input[type="email"], textarea{
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+.contact a{
+    text-decoration: none;
+    padding-right: 24px;
+}
